@@ -25,23 +25,26 @@
     
   <div class="navbar-fixed">
   <nav class="black lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" class="brand-logo"></a>
-      <ul class="left hide-on-med-and-down">
-        <li><a href="demands.html" class="white-text">Demands & Goals</a></li>
+    <div class="nav-wrapper container">
+     <a id="logo-container" class="brand-logo"></a>
+     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="left hide-on-med-and-down"> 
+      <li><a href="index.html" class="white-text">Home</a></li> 
+      <li><a href="demands.html" class="white-text">Demands & Goals</a></li>
       <li><a href="timeline.html" class="white-text">Timeline</a></li>
       <li><a href="letters.html" class="white-text">Letters of Solidarity</a></li>
       <li><a href="gallery.html" class="white-text">Gallery</a></li>
       </ul>
 
-    <ul id="nav-mobile" class="side-nav">
-      <li><a href="demands.html" class="white-text">Demands & Goals</a></li>
-      <li><a href="timeline.html" class="white-text">Timeline</a></li>
-      <li><a href="letters.html" class="white-text">Letters of Solidarity</a></li>
-      <li><a href="gallery.html" class="white-text">Gallery</a></li>
-    </ul>
-    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="index.html" class="black-text">Home</a></li> 
+        <li><a href="demands.html" class="black-text" id="mobile-demo">Demands & Goals</a></li>
+        <li><a href="timeline.html" class="black-text">Timeline</a></li>
+        <li><a href="letters.html" class="black-text">Letters of Solidarity</a></li>
+        <li><a href="gallery.html" class="black-text">Gallery</a></li>
+      </ul>
+      </div>
   </nav>
- 
  </div>
  <div class="section no-pad-bot" id="index-banner">
    <img class="responsive-img" src="images/banner.jpg"></img> 
@@ -108,7 +111,12 @@ The WGC, MRC, & QRC
     </div>
   </div>
 
-
+ <script>
+ $(document).ready(function(){
+   // Activate the side menu 
+   $(".button-collapse").sideNav();
+  });
+</script> 
   
         
             
