@@ -15,3 +15,7 @@
 #mobile-demo {
 	color: black;
 }
+
+.transparent {
+	opacity: .8;
+}
