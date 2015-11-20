@@ -15,3 +15,7 @@
 .transparent {
 	opacity: .8;
 }
+
+li {
+	display: list-item
+}
